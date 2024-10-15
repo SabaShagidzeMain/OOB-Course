@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iomanip>
+#include <cmath>
 
 using namespace std;
 
@@ -9,6 +11,8 @@ using namespace std;
 int main()
 {
     cout << "Hello World!" << endl;
+    // cout - Console Output
+    // endl - Endline
 
     int counter;
     counter = 13;
@@ -38,6 +42,26 @@ int main()
     sheep_counter++; // Increment (+1)
     sheep_counter--; // Decrement (-1)
     cout << sheep_counter << endl;
+
+    // Comparison Operators:
+    //  ==, !=, >, >=, <, <=,
+
+    // Conditions And Conditional Executions
+    // if(true_or_not) do_this_if_true();
+    if (sheep_counter == 0)
+    {
+        cout << "There Are No Sheep: " << sheep_counter << endl;
+    }
+    else
+    {
+        cout << "There Are " << sheep_counter << " Amount of Sheep." << endl;
+    }
+
+    // Console Input - cin >>
+    string user_input;
+    cout << "Say Something: ";
+    cin >> user_input;
+    cout << "You Said: " << user_input << endl;
 
     return 0;
 }
