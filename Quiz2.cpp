@@ -36,4 +36,3 @@ int main()
    {
       cout << "Default Error";
    }
-}
